@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influxo – A Força da Imaginação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-background"></div>
+    <main id="app-container">
+        </main>
+    <script src="script.js"></script>
+    <div id="dice-roller-overlay" class="roller-overlay">
+        <h3>🎲 Rolagem de Dados</h3>
+        <div id="dice-buttons">
+            <button onclick="rollDice(20, 0)">1d20</button>
+            <button onclick="rollDice(4, 0)">1d4</button>
+            <button onclick="rollDice(6, 0)">1d6</button>
+            <button onclick="rollDice(8, 0)">1d8</button>
+            <button onclick="rollDice(10, 0)">1d10</button>
+            <button onclick="rollDice(12, 0)">1d12</button>
+            <button onclick="rollDice(100, 0)">1d100</button>
+        </div>
+        <input type="number" id="dice-modifier" placeholder="Modificador (+/-)">
+        <button onclick="handleCustomRoll()">Rolar com Modificador</button>
+        <div id="roll-history" class="history-box"></div>
+    </div>
+</body>
+</html>
